@@ -23,6 +23,7 @@ if ($role === 'admin') {
         'admin_sports' => '../MAIN/roles/admin_/sports.php',
         'admin_events' => '../MAIN/roles/admin_/events.php',
         'admin_course_section' => '../MAIN/roles/admin_/course_section.php',
+        'admin_studReg' => '../MAIN/roles/admin_/studReg.php', // New page
         '404' => 'MAIN/roles/guest/404.php',
     ];
     $sidebar_items = [
@@ -31,6 +32,7 @@ if ($role === 'admin') {
         ['name' => 'Sports', 'icon' => 'fa-solid fa-medal', 'page' => 'admin_sports'],
         ['name' => 'Events', 'icon' => 'fa-solid fa-calendar-days', 'page' => 'admin_events'],
         ['name' => 'Course and Sections', 'icon' => 'bi bi-mortarboard-fill', 'page' => 'admin_course_section'],
+        ['name' => 'Registration', 'icon' => 'fa-solid fa-clipboard-list', 'page' => 'admin_studReg'], // New item
     ];
 } elseif ($role === 'teacher') {
     $allowed_pages = [
